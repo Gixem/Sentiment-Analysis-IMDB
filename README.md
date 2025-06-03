@@ -1,9 +1,61 @@
-## Dataset Erişimi
+# 🎬 Sentiment Analysis on IMDb Movie Reviews
 
-Dataset boyutu GitHub yükleme sınırını (25MB) aştığı için doğrudan repoya dahil edilmemiştir.
+## 📌 Project Overview
 
-Dataset'e bu bağlantıdan erişebilirsiniz: [Google Drive ile indir](https://drive.google.com/file/d/18Cb1PjkC-tzrAKkvTLdqeIFUaao1VoOP/view?usp=sharing)
-veya [Kaggle ile indir](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) .
+This project focuses on classifying IMDb movie reviews as **positive** or **negative** using **text mining** and **machine learning** techniques.
 
-Lütfen `imdb_dataset.csv` dosyasını proje klasörüne ekleyip kodları çalıştırınız.
+The primary goal is to automate the sentiment analysis process of user-generated content, making review evaluation faster, more scalable, and less dependent on human effort.
+
+---
+
+## 🧠 Methods Used
+
+- **Data Cleaning**: Lowercasing, punctuation removal, stopword removal, lemmatization
+- **Text Vectorization**: TF-IDF (Term Frequency - Inverse Document Frequency)
+- **Machine Learning**: Logistic Regression (best performing model after comparison)
+- **Model Evaluation**: Confusion Matrix, Classification Report, Accuracy, WordClouds
+- **Visualization**: Matplotlib, Seaborn
+
+---
+
+## 📊 Dataset
+
+- **Source**: IMDb movie reviews dataset
+- **Size**: ~50,000 reviews
+- **Class Balance**: The dataset was balanced with approximately 50% positive and 50% negative reviews.
+
+---
+
+## ⚙️ How to Run
+
+1. Install the required libraries:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. Open and run the notebook file `main.ipynb` step by step.
+
+---
+
+## 📈 Results
+
+- **Accuracy**: 88%
+- **Precision (Positive)**: 0.87
+- **Recall (Positive)**: 0.88
+- **F1-Score**: 0.87
+- **Confusion Matrix**: The model made fewer false negatives compared to false positives.
+
+The WordCloud visualizations revealed which words were most frequently associated with each sentiment class.
+
+Additionally, we analyzed examples of incorrect predictions (e.g., sarcasm, ambiguous wording).
+
+---
+
+## 🔍 Sample Visualizations
+
+- Sentiment Distribution in Test Data
+- Confusion Matrix
+- Classification Report Table
+- WordClouds (Positive/Negative)
+- Examples of Misclassified Comments
 
